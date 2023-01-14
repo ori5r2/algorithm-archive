@@ -1,3 +1,5 @@
 BOJ/*.txt
 BOJ/test
-template/*
+template
+.vscode
+trying
