@@ -36,6 +36,9 @@ void dijk(int startNode)
         int nowVertex = top.end, nowCost = top.cost;
         int len = adj[nowVertex].size();
 
+        if (nowCost > dist[nowVertex])
+            continue; // 시간초과
+
         for (int i = 0; i < len; i++)
         {
             edge next = adj[nowVertex][i];
