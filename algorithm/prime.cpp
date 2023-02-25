@@ -9,7 +9,7 @@ int main(void)
 
     for (int i = 2; i <= sqrt(MX); i++)
     {
-        for (int j = i; j <= MX; j++)
+        for (int j = i + 1; j <= MX; j++)
         {
             if (isNotPrime[j])
                 continue;
