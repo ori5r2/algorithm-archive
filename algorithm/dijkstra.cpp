@@ -28,7 +28,7 @@ void dijk(int startNode)
     pq.push({startNode, 0});
     dist[startNode] = 0;
 
-    while (pq.empty())
+    while (!pq.empty())
     {
         edge top = pq.top();
         pq.pop();
